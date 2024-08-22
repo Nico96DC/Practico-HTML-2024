@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo práctico de HTML</title>
+    <style>
+        header,  footer{
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+        }
+        h1, h2{
+            border: 2px solid black;
+        }
+        th, td {
+            width: 150px;
+            text-align: center;
+            border: 2px solid black;
+        }
+        form label{
+            width: 100px;
+            text-align: left;
+            display: inline-block;
+            vertical-align: top;
+        }
+        form input{
+            width: 200px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Trabajo Práctico HTML</h1>
+    </header>
+
+    <hr>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#Estructura">Estructura Básica del Documento HTML</a></li>
+                <li><a href="#Textos">Encabezados y Propiedades del Texto</a></li>
+                <li><a href="#Agrupaciones">Divisiones y Agrupación de Contenido</a></li>
+                <li><a href="#Enlaces">Enlaces</a></li>
+                <li><a href="#Listas">Listas</a></li>
+                <li><a href="#Multimedia">Elementos Multimedia</a></li>
+                <li><a href="#Tablas">Tablas</a></li>
+                <li><a href="#Formulario">Formularios</a></li>
+        <!-- Estructura basica -->
+        <section id="Estructura">
+            <div>
+                <h1>1. Estructura Básica del Documento HTML</h1>
+                <p>Este documento HTML tiene la siguiente estructura básica que incluye la declaración DOCTYPE, etiquetas de metadatos y un título.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Propiedades de textos -->
+        <section id="Textos">
+            <div>
+                <h1>2. Encabezados y Propiedades del Texto</h1>
+                <p>Este es <b>un texto en negrita</b>.</p>
+                <p>Este es <em>un texto en cursiva</em>.</p>
+                <p>Este es <u>un texto resaltado</u>.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Divisiones y secciones -->
+        <section id="Agrupaciones">
+            <h1>3. Divisiones y Agrupación de Contenido</h1>
+            <div>
+                <article>
+                    <h2>Sección 1</h2>
+                    <p>Contenido de la primera sección agrupada en un div.</p>
+                </article>
+            </div>
+            <div>
+                <article>
+                    <h2>Sección 2</h2>
+                    <p>Contenido de la segunda sección agrupada en un div.</p>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Enlaces -->
+        <section id="Enlaces">
+            <h1>4. Enlaces y Listas</h1>
+            <p>Visita nuestro <a href="https://www.youtube.com/watch?v=FcZ_D5jsilM" target="_blank">sitio web</a> para más informacion.</p>
+            <div>
+                <p>Enlaces internos:</p>
+                <nav>
+                    <ul>
+                        <li><a href="#Estructura">Ir a Estructura</a></li>
+                        <li><a href="#Multimedia">Ir a Multimedia</a></li>
+                        <li><a href="#Formulario">Ir a Formulario</a></li>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Listas -->
+        <section id="Listas">
+            <p>Lista desordenada:</p>
+            <div>
+                <ul>
+                    <li>Primer item de la lista desordenada</li>
+                    <li>Segundo item de la lista desordenada</li>
+                </ul>
+            </div>
+            <div>
+                <p>Lista ordenada:</p>
+                <ol>
+                    <li>Primer item de la lista ordenada</li>
+                    <li>Segundo item de la lista ordenada</li>
+                </ol>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Inserciones multimedia -->
+        <section id="Multimedia">
+            <h1>5. Elementos Multimedia</h1>
+            <p>Imagen insertada:</p>
+            <div>
+                <img src="https://i.ibb.co/HztW5Yh/Bliss-XP.jpg" width="500px" alt="Fondo de Bliss de XP editado"/>
+            </div>
+            <div>
+                <p>Video insertado:</p>
+                <video width="500px" controls loop
+                    src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4">
+                </video>
+            </div>
+            <div>
+                <p>Audio insertado:</p>
+                <audio controls
+                    src="https://kappa.vgmsite.com/soundtracks/super-mario-sunshine-game-rip/zhmobuajpu/19.%20Bianco%20Hills%20%28Medley%29.mp3">
+                </audio>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Tablas -->
+        <section id="Tablas">
+            <h1>6. Tablas</h1>
+            <table style="border-collapse: collapse">
+                <div>
+                    <!-- Inserción de columnas -->
+                    <thead>
+                        <tr>
+                            <th>Columna 1</th>
+                            <th>Columna 2</th>
+                        </tr>
+                    </thead>
+                </div>
+
+                <div>
+                    <!-- Inserción de filas -->
+                    <tbody>
+                        <tr>
+                            <td>Celda izquierda 1</td>
+                            <td>Celda derecha 1</td>
+                        </tr>
+                        <tr>
+                            <td>Celda izquierda 2</td>
+                            <td>Celda derecha 2</td>
+                        </tr>
+                        <tr>
+                            <td>Celda izquierda 3</td>
+                            <td>Celda derecha 3</td>
+                        </tr>
+                    </tbody>
+                </div>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Formularios -->
+        <section id="Formulario">
+            <h1>7. Formularios</h1>
+            <form>
+                <div>
+                    <label>Nombre:</label>
+                    <input type="text" placeholder="Ingresar nombre">
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" placeholder="ejemplo@ejemplo.com">
+                </div>
+                <div>
+                    <label>Mensaje:</label>
+                    <textarea placeholder="Ingresar detalles del mensaje"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <h2>2024 - Trabajo Práctico de HTML</h2>
+    </footer>   
+</body>
+</html>
